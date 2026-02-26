@@ -66,6 +66,18 @@ footer{text-align:center;padding:40px;color:#64748b;}
 .hero{flex-direction:column;text-align:center;}
 .skills-grid{grid-template-columns:1fr;}
 }
+.skill-bar{margin-bottom:20px;}
+.skill-bar p{margin-bottom:6px;font-weight:500;}
+.bar{
+height:8px;
+background:#e2e8f0;
+border-radius:10px;
+overflow:hidden;
+}
+.fill{
+height:100%;
+background:#2563eb;
+}
 </style>
 </head>
 
@@ -109,28 +121,49 @@ Focused on delivering data-driven insights to support strategic decisions.
 </section>
 
 <section id="skills">
-<h2>Core Skills</h2>
+<h2 style="margin-bottom:40px;">Core Skills</h2>
+
 <div class="skills-grid">
 
 <div class="card">
 <h3>Technical Skills</h3>
-<ul>
-<li>Excel – Formulas, Pivot Tables, Power Query</li>
-<li>SQL – SELECT, JOINs, GROUP BY, HAVING</li>
-<li>Power BI – DAX, Modeling, Dashboards</li>
-<li>Tableau – Visualizations, Filters</li>
-<li>Python – Basic Understanding</li>
-</ul>
+
+<div class="skill-bar">
+<p>Excel</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill-bar">
+<p>SQL</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-bar">
+<p>Power BI</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-bar">
+<p>Tableau</p>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill-bar">
+<p>Python (Basic Understanding)</p>
+<div class="bar"><div class="fill" style="width:55%"></div></div>
+</div>
+
 </div>
 
 <div class="card">
-<h3>Analytics Skills</h3>
-<ul>
-<li>Data Cleaning</li>
-<li>KPI Development</li>
-<li>Trend Analysis</li>
-<li>MIS Reporting</li>
+<h3>Analytics & Business Skills</h3>
+<ul style="line-height:2;">
+<li>Data Cleaning & Preparation</li>
+<li>KPI Development & Reporting</li>
+<li>Trend & Pattern Analysis</li>
 <li>Performance Monitoring</li>
+<li>Business Metrics Understanding</li>
+<li>Data-Driven Decision Making</li>
 </ul>
 </div>
 
@@ -183,18 +216,52 @@ Focused on delivering data-driven insights to support strategic decisions.
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+<h2 style="margin-bottom:30px;">Let's Connect</h2>
+
 <div class="card">
-<p>Email: <a href="mailto:mk9694477@gmail.com">mk9694477@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/mubashir556/" target="_blank">View Profile</a></p>
-<p>GitHub: <a href="https://github.com/mubashir556" target="_blank">View Projects</a></p>
+
+<p style="margin-bottom:25px;">
+I am actively seeking opportunities as a Data Analyst, Business Analyst, MIS Executive or BI Developer. 
+If you are a recruiter or hiring manager, feel free to reach out.
+</p>
+
+<form action="https://formsubmit.co/mk9694477@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+<div style="display:grid; gap:15px;">
+
+<input type="text" name="name" placeholder="Your Name" required
+style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;">
+
+<input type="email" name="email" placeholder="Your Email" required
+style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;">
+
+<textarea name="message" placeholder="Your Message" rows="5" required
+style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;"></textarea>
+
+<button type="submit"
+style="padding:12px;border:none;border-radius:8px;background:#2563eb;color:white;font-weight:500;cursor:pointer;">
+Send Message
+</button>
+
+</div>
+</form>
+
+<div style="margin-top:30px; line-height:1.8;">
+<p><strong>Email:</strong> <a href="mailto:mk9694477@gmail.com">mk9694477@gmail.com</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubashir556/" target="_blank">Connect on LinkedIn</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/mubashir556" target="_blank">View GitHub Projects</a></p>
+</div>
+
 </div>
 </section>
-
 <footer>
 © 2026 Mohammad Mubashir Khan
 </footer>
 
 </body>
 </html>
+
 
