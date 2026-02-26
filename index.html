@@ -5,39 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohammad Mubashir Khan | Data Analyst Portfolio</title>
 
-<meta name="description" content="Mohammad Mubashir Khan - Data Analyst skilled in SQL, Power BI, Excel, Tableau and Python. Specializing in KPI reporting, Supply Chain Analytics, Manufacturing Analytics and Financial Data Analysis.">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body{background:#f5f7fa;color:#0f172a;scroll-behavior:smooth;}
+body{background:#f5f7fa;color:#0f172a;}
 
 nav{
 position:fixed;top:0;width:100%;background:white;
 display:flex;justify-content:space-between;align-items:center;
 padding:18px 10%;box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:1000;
 }
-nav a{text-decoration:none;color:#475569;margin-left:25px;font-weight:500;transition:0.3s;}
+nav a{text-decoration:none;color:#475569;margin-left:25px;font-weight:500;}
 nav a:hover{color:#2563eb;}
 
-section{
-padding:120px 10% 80px;
-opacity:0;transform:translateY(40px);
-transition:0.6s ease;
-}
-section.visible{opacity:1;transform:translateY(0);}
+section{padding:120px 10% 80px;}
 
-h1{font-size:48px;font-weight:700;}
-h2{font-size:30px;margin-bottom:40px;}
+h1{font-size:42px;font-weight:700;}
+h2{font-size:28px;margin-bottom:30px;}
 h3{margin-bottom:15px;}
-p{line-height:1.7;color:#475569;}
 
 .hero{
 display:flex;justify-content:space-between;align-items:center;
 min-height:100vh;gap:60px;
 }
-.hero span{color:#2563eb;}
+
 .profile-img{
 width:260px;border-radius:16px;
 box-shadow:0 15px 40px rgba(0,0,0,0.1);
@@ -46,21 +38,18 @@ box-shadow:0 15px 40px rgba(0,0,0,0.1);
 .btn{
 display:inline-block;margin-top:25px;
 padding:12px 28px;background:#2563eb;color:white;
-border-radius:8px;text-decoration:none;font-weight:500;transition:0.3s;
+border-radius:8px;text-decoration:none;font-weight:500;
 }
-.btn:hover{background:#1e40af;transform:translateY(-2px);}
 
 .card{
 background:white;padding:30px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
-margin-bottom:30px;transition:0.3s;
+margin-bottom:30px;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08);}
 
-.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-.skill-bar{margin-bottom:18px;}
-.bar{height:8px;background:#e2e8f0;border-radius:10px;overflow:hidden;margin-top:6px;}
-.fill{height:100%;width:0;background:#2563eb;transition:1.5s ease;}
+.skills-grid{
+display:grid;grid-template-columns:1fr 1fr;gap:40px;
+}
 
 .project-grid{
 display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;
@@ -68,23 +57,8 @@ display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;
 .project{
 background:white;padding:20px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
-transition:0.3s;cursor:pointer;
 }
 .project img{width:100%;border-radius:12px;margin-bottom:15px;}
-.project:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.1);}
-
-.modal{
-display:none;position:fixed;top:0;left:0;width:100%;height:100%;
-background:rgba(0,0,0,0.7);justify-content:center;align-items:center;
-padding:20px;z-index:2000;
-}
-.modal-content{
-background:white;padding:30px;border-radius:16px;
-max-width:900px;width:100%;max-height:90vh;overflow-y:auto;
-}
-.modal img{width:100%;border-radius:12px;margin-top:20px;}
-.close{float:right;font-size:22px;cursor:pointer;color:#475569;}
-.close:hover{color:#2563eb;}
 
 footer{text-align:center;padding:40px;color:#64748b;}
 
@@ -110,99 +84,114 @@ footer{text-align:center;padding:40px;color:#64748b;}
 
 <section class="hero">
 <div>
-<h1>Hi, I'm <span>Mohammad Mubashir Khan</span></h1>
+<h1>Hi, I'm <span style="color:#2563eb;">Mohammad Mubashir Khan</span></h1>
 <h2>Data Analyst | SQL | Power BI | Excel | Tableau | Python</h2>
 <p>
-I am an aspiring analytics professional actively seeking an entry-level opportunity as a Data Analyst, Business Analyst, MIS Executive, or BI Developer where I can apply analytical skills and contribute to business insights.
+Aspiring Data Analyst with hands-on experience in Manufacturing, Supply Chain, Stock Market and Sales analytics.
 </p>
-<a href="Mubashir_Khan_Data_Analyst_Resume.pdf" class="btn" download>Download Resume</a>
+
+<a href="Mubashir_Khan_Data_Analyst_Resume.pdf.pdf" class="btn" download>
+Download Resume
+</a>
+
 </div>
-<img src="images/profile.jpg" class="profile-img">
+
+<img src="images/profile.jpg.jpg" class="profile-img">
+</section>
+
+<section id="about">
+<h2>Professional Summary</h2>
+<div class="card">
+Entry-level Data Analyst experienced in data cleaning, KPI reporting, dashboard building and business insights generation using Excel, SQL, Power BI and Tableau.
+</div>
+</section>
+
+<section id="skills">
+<h2>Core Skills</h2>
+<div class="skills-grid">
+
+<div class="card">
+<h3>Technical Skills</h3>
+<ul>
+<li>Excel – Formulas, Pivot Tables, Power Query</li>
+<li>SQL – SELECT, JOINs, GROUP BY, HAVING</li>
+<li>Power BI – DAX, Modeling, Dashboards</li>
+<li>Tableau – Visualizations, Filters</li>
+<li>Python – Basic Understanding</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Analytics Skills</h3>
+<ul>
+<li>Data Cleaning</li>
+<li>KPI Development</li>
+<li>Trend Analysis</li>
+<li>MIS Reporting</li>
+<li>Performance Monitoring</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+<div class="card">
+<h3>Data Analyst Intern – Ai Variant</h3>
+<p><strong>May 2025 – Nov 2025</strong></p>
+<ul>
+<li>Cleaned and transformed datasets using Excel and SQL.</li>
+<li>Built dashboards in Power BI and Tableau.</li>
+<li>Developed KPIs for reporting.</li>
+<li>Delivered actionable insights.</li>
+</ul>
+</div>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
 <div class="project-grid">
 
-<div class="project" onclick="openProject('Supply Chain & Inventory Management Analysis','Excel, SQL, Power BI, Tableau','Conducted end-to-end supply chain analysis.\nDeveloped KPIs including Inventory Turnover and Demand Trends.\nBuilt interactive dashboards.\nDelivered actionable operational insights.','images/supplychain.png')">
-<img src="images/supplychain.png">
+<div class="project">
+<img src="images/supplychain.png.png">
 <h3>Supply Chain & Inventory</h3>
+<p>Inventory turnover and demand fulfillment analysis.</p>
 </div>
 
-<div class="project" onclick="openProject('Manufacturing Performance Analysis','Excel, SQL (MySQL), Power BI, Tableau','Analyzed production and rejection metrics.\nBuilt KPIs including Wastage % and Machine Utilization.\nIdentified underperforming departments.\nProvided cost optimization recommendations.','images/manufacturing.png')">
-<img src="images/manufacturing.png">
+<div class="project">
+<img src="images/manufacturing.png.png">
 <h3>Manufacturing Analysis</h3>
+<p>Machine performance and wastage KPI dashboard.</p>
 </div>
 
-<div class="project" onclick="openProject('Stock Market Analytics & Portfolio Analysis','Excel, MySQL, Power BI, Tableau','Analyzed trading volume and volatility.\nBuilt KPIs including Average Closing Price and Portfolio Value.\nDeveloped sector-wise dashboards.\nProvided portfolio diversification insights.','images/stock.png')">
-<img src="images/stock.png">
+<div class="project">
+<img src="images/stock.png.jpg">
 <h3>Stock Market Analytics</h3>
+<p>Portfolio and volatility performance analysis.</p>
 </div>
 
-<div class="project" onclick="openProject('Superstore Sales Dashboard','Excel (Advanced Formulas, Pivot Tables, VBA)','Analyzed sales and profitability.\nBuilt KPI dashboard with slicers.\nIdentified seasonal sales peaks.\nImproved profitability recommendations.','images/sales.png')">
-<img src="images/sales.png">
+<div class="project">
+<img src="images/sales.png.png">
 <h3>Superstore Sales Dashboard</h3>
+<p>Sales, profit and return trend analysis.</p>
 </div>
 
 </div>
 </section>
 
 <section id="contact">
-<h2>Let's Connect</h2>
+<h2>Contact</h2>
 <div class="card">
-<form name="contact" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="contact">
-<input type="text" name="name" placeholder="Your Name" required style="padding:12px;margin-bottom:15px;width:100%;">
-<input type="email" name="email" placeholder="Your Email" required style="padding:12px;margin-bottom:15px;width:100%;">
-<textarea name="message" placeholder="Your Message" rows="5" required style="padding:12px;margin-bottom:15px;width:100%;"></textarea>
-<button type="submit" class="btn">Send Message</button>
-</form>
+<p>Email: <a href="mailto:mk9694477@gmail.com">mk9694477@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mubashir556/" target="_blank">View Profile</a></p>
+<p>GitHub: <a href="https://github.com/mubashir556" target="_blank">View Projects</a></p>
 </div>
 </section>
 
 <footer>
-© 2026 Mohammad Mubashir Khan | Data Analyst Portfolio
+© 2026 Mohammad Mubashir Khan
 </footer>
-
-<div class="modal" id="projectModal">
-<div class="modal-content">
-<span class="close" onclick="closeProject()">&times;</span>
-<h3 id="modalTitle"></h3>
-<p><strong>Tools Used:</strong> <span id="modalTools"></span></p>
-<ul id="modalDescription" style="margin-top:15px;line-height:1.8;"></ul>
-<img id="modalImage">
-</div>
-</div>
-
-<script>
-const sections=document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-sections.forEach(sec=>{
-if(sec.getBoundingClientRect().top<window.innerHeight-100){
-sec.classList.add("visible");
-}
-});
-});
-
-function openProject(title,tools,description,image){
-document.getElementById("modalTitle").innerText=title;
-document.getElementById("modalTools").innerText=tools;
-document.getElementById("modalImage").src=image;
-const list=document.getElementById("modalDescription");
-list.innerHTML="";
-description.split("\n").forEach(line=>{
-if(line.trim()!=""){
-let li=document.createElement("li");
-li.innerText=line;
-list.appendChild(li);
-}
-});
-document.getElementById("projectModal").style.display="flex";
-}
-function closeProject(){
-document.getElementById("projectModal").style.display="none";
-}
-</script>
 
 </body>
 </html>
