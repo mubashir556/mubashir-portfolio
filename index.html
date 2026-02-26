@@ -14,7 +14,6 @@
 html{scroll-behavior:smooth;}
 body{background:#f5f7fa;color:#0f172a;}
 
-/* NAV */
 nav{
 position:fixed;top:0;width:100%;background:white;
 display:flex;justify-content:space-between;align-items:center;
@@ -23,14 +22,11 @@ padding:18px 10%;box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:1000;
 nav a{text-decoration:none;color:#475569;margin-left:25px;font-weight:500;transition:0.3s;}
 nav a:hover{color:#2563eb;}
 
-/* SECTIONS */
 section{padding:120px 10% 80px;}
-
 h1{font-size:42px;font-weight:700;}
 h2{font-size:28px;margin-bottom:30px;}
 h3{margin-bottom:15px;}
 
-/* HERO */
 .hero{
 display:flex;justify-content:space-between;align-items:center;
 min-height:100vh;gap:60px;
@@ -47,7 +43,6 @@ transition:0.3s;
 }
 .btn:hover{background:#1e40af;transform:translateY(-2px);}
 
-/* CARD */
 .card{
 background:white;padding:30px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
@@ -56,33 +51,55 @@ transition:0.3s;
 }
 .card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08);}
 
-/* SKILLS */
 .skills-grid{
 display:grid;grid-template-columns:1fr 1fr;gap:40px;
 }
 .skill-bar{margin-bottom:20px;}
 .skill-bar p{margin-bottom:6px;font-weight:500;}
-.bar{
-height:8px;background:#e2e8f0;border-radius:10px;overflow:hidden;
-}
-.fill{
-height:100%;background:#2563eb;
-}
+.bar{height:8px;background:#e2e8f0;border-radius:10px;overflow:hidden;}
+.fill{height:100%;background:#2563eb;}
 
-/* PROJECTS */
 .project-grid{
 display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;
 }
 .project{
 background:white;padding:20px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
-transition:0.3s;
+transition:0.3s;cursor:pointer;
 }
 .project:hover{
 transform:translateY(-6px);
 box-shadow:0 12px 35px rgba(0,0,0,0.1);
 }
 .project img{width:100%;border-radius:12px;margin-bottom:15px;}
+
+.modal{
+display:none;
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:2000;
+}
+.modal-content{
+background:white;
+padding:30px;
+border-radius:16px;
+max-width:900px;
+width:100%;
+max-height:90vh;
+overflow-y:auto;
+}
+.close{
+float:right;
+font-size:22px;
+cursor:pointer;
+color:#475569;
+}
+.close:hover{color:#2563eb;}
 
 footer{text-align:center;padding:40px;color:#64748b;}
 
@@ -92,6 +109,7 @@ footer{text-align:center;padding:40px;color:#64748b;}
 }
 </style>
 </head>
+
 
 <body>
 
@@ -234,36 +252,105 @@ Entry-level Data Analyst with hands-on experience in data cleaning, data analysi
 </section>
 
 <!-- PROJECTS -->
+<!-- PROJECTS (UPDATED) -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="project-grid">
 
-<div class="project">
+<div class="project" onclick="openProject(
+'Supply Chain & Inventory Management Analysis',
+'Excel, SQL, Power BI, Tableau',
+`Conducted end-to-end analysis of sales performance, inventory levels, and demand fulfillment.
+Performed data cleaning and validation.
+Developed KPIs including Inventory Turnover and Stock Availability.
+Built interactive dashboards in Power BI and Tableau.
+Delivered insights to optimize supply chain operations.`,
+'images/supplychain.png.png')">
 <img src="images/supplychain.png.png">
 <h3>Supply Chain & Inventory</h3>
-<p>Inventory turnover and demand fulfillment analysis.</p>
+<p>Click to view full project details</p>
 </div>
 
-<div class="project">
+<div class="project" onclick="openProject(
+'Manufacturing Performance Analysis',
+'Excel, SQL (MySQL), Power BI, Tableau',
+`Analyzed production, rejection and machine performance data.
+Defined KPIs such as Wastage Rate and Machine Utilization.
+Built drill-down dashboards.
+Validated KPI calculations using SQL.
+Provided recommendations to reduce wastage.`,
+'images/manufacturing.png.png')">
 <img src="images/manufacturing.png.png">
 <h3>Manufacturing Analysis</h3>
-<p>Machine performance and wastage KPI dashboard.</p>
+<p>Click to view full project details</p>
 </div>
 
-<div class="project">
+<div class="project" onclick="openProject(
+'Stock Market Analytics & Portfolio Performance',
+'Excel, MySQL, Power BI, Tableau',
+`Designed stock analytics system.
+Built KPIs including Market Volatility and Portfolio Value.
+Used SQL joins and window functions.
+Created dashboards for sector and exchange analysis.
+Provided portfolio optimization recommendations.`,
+'images/stock.png.jpg')">
 <img src="images/stock.png.jpg">
 <h3>Stock Market Analytics</h3>
-<p>Portfolio and volatility performance analysis.</p>
+<p>Click to view full project details</p>
 </div>
 
-<div class="project">
+<div class="project" onclick="openProject(
+'Superstore Sales Performance Dashboard',
+'Excel (Advanced Formulas, Pivot Tables, VBA)',
+`Analyzed sales and profit trends.
+Built interactive Excel dashboard.
+Calculated Profit Margin and Return Rate.
+Automated reporting using VBA.
+Identified seasonal peaks and regional performance.`,
+'images/sales.png.png')">
 <img src="images/sales.png.png">
 <h3>Superstore Sales Dashboard</h3>
-<p>Sales, profit and return trend analysis.</p>
+<p>Click to view full project details</p>
 </div>
 
 </div>
 </section>
+
+<!-- MODAL -->
+<div class="modal" id="projectModal">
+<div class="modal-content">
+<span class="close" onclick="closeProject()">&times;</span>
+<h3 id="modalTitle"></h3>
+<p><strong>Tools Used:</strong> <span id="modalTools"></span></p>
+<ul id="modalDescription" style="margin-top:15px;line-height:1.8;"></ul>
+<img id="modalImage" style="margin-top:20px;">
+</div>
+</div>
+
+<script>
+function openProject(title, tools, description, image){
+document.getElementById("modalTitle").innerText = title;
+document.getElementById("modalTools").innerText = tools;
+
+const list = document.getElementById("modalDescription");
+list.innerHTML = "";
+
+description.split("\n").forEach(line => {
+if(line.trim() !== ""){
+let li = document.createElement("li");
+li.innerText = line;
+list.appendChild(li);
+}
+});
+
+document.getElementById("modalImage").src = image;
+document.getElementById("projectModal").style.display = "flex";
+}
+
+function closeProject(){
+document.getElementById("projectModal").style.display = "none";
+}
+</script>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -288,4 +375,5 @@ Actively seeking opportunities as Data Analyst, Business Analyst or BI Developer
 
 </body>
 </html>
+
 
