@@ -5,58 +5,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohammad Mubashir Khan | Data Analyst Portfolio</title>
 
+<meta name="description" content="Mohammad Mubashir Khan - Data Analyst skilled in SQL, Power BI, Excel, Tableau and Python. Experience in Manufacturing, Supply Chain, Stock Market and Sales Analytics.">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+html{scroll-behavior:smooth;}
 body{background:#f5f7fa;color:#0f172a;}
 
+/* NAV */
 nav{
 position:fixed;top:0;width:100%;background:white;
 display:flex;justify-content:space-between;align-items:center;
 padding:18px 10%;box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:1000;
 }
-nav a{text-decoration:none;color:#475569;margin-left:25px;font-weight:500;}
+nav a{text-decoration:none;color:#475569;margin-left:25px;font-weight:500;transition:0.3s;}
 nav a:hover{color:#2563eb;}
 
+/* SECTIONS */
 section{padding:120px 10% 80px;}
 
 h1{font-size:42px;font-weight:700;}
 h2{font-size:28px;margin-bottom:30px;}
 h3{margin-bottom:15px;}
 
+/* HERO */
 .hero{
 display:flex;justify-content:space-between;align-items:center;
 min-height:100vh;gap:60px;
 }
-
 .profile-img{
 width:260px;border-radius:16px;
 box-shadow:0 15px 40px rgba(0,0,0,0.1);
 }
-
 .btn{
 display:inline-block;margin-top:25px;
 padding:12px 28px;background:#2563eb;color:white;
 border-radius:8px;text-decoration:none;font-weight:500;
+transition:0.3s;
 }
+.btn:hover{background:#1e40af;transform:translateY(-2px);}
 
+/* CARD */
 .card{
 background:white;padding:30px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
 margin-bottom:30px;
+transition:0.3s;
 }
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08);}
 
+/* SKILLS */
 .skills-grid{
 display:grid;grid-template-columns:1fr 1fr;gap:40px;
 }
+.skill-bar{margin-bottom:20px;}
+.skill-bar p{margin-bottom:6px;font-weight:500;}
+.bar{
+height:8px;background:#e2e8f0;border-radius:10px;overflow:hidden;
+}
+.fill{
+height:100%;background:#2563eb;
+}
 
+/* PROJECTS */
 .project-grid{
 display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;
 }
 .project{
 background:white;padding:20px;border-radius:16px;
 box-shadow:0 6px 25px rgba(0,0,0,0.06);
+transition:0.3s;
+}
+.project:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 35px rgba(0,0,0,0.1);
 }
 .project img{width:100%;border-radius:12px;margin-bottom:15px;}
 
@@ -65,18 +89,6 @@ footer{text-align:center;padding:40px;color:#64748b;}
 @media(max-width:900px){
 .hero{flex-direction:column;text-align:center;}
 .skills-grid{grid-template-columns:1fr;}
-}
-.skill-bar{margin-bottom:20px;}
-.skill-bar p{margin-bottom:6px;font-weight:500;}
-.bar{
-height:8px;
-background:#e2e8f0;
-border-radius:10px;
-overflow:hidden;
-}
-.fill{
-height:100%;
-background:#2563eb;
 }
 </style>
 </head>
@@ -89,40 +101,40 @@ background:#2563eb;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
+<a href="#certifications">Certification</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 <div>
 <h1>Hi, I'm <span style="color:#2563eb;">Mohammad Mubashir Khan</span></h1>
 <h2>Data Analyst | SQL | Power BI | Excel | Tableau | Python</h2>
 <p>
 I am an aspiring analytics professional with hands-on experience in data analysis, reporting, and dashboard development. I am actively looking for an entry-level opportunity as a Data Analyst, Business Analyst, MIS Executive, or BI Developer where I can apply my analytical skills, contribute to business insights, and grow in a data-driven environment.
-</p>
 
+</p>
 <a href="Mubashir_Khan_Data_Analyst_Resume.pdf.pdf" class="btn" download>
 Download Resume
 </a>
-
 </div>
-
 <img src="images/profile.jpg.jpg" class="profile-img">
 </section>
 
+<!-- ABOUT -->
 <section id="about">
 <h2>Professional Summary</h2>
 <div class="card">
-Entry-level Data Analyst experienced in data cleaning, transformation,
-SQL querying, dashboard development and business performance analysis.
-Focused on delivering data-driven insights to support strategic decisions.
+Entry-level Data Analyst with hands-on experience in data cleaning, data analysis, reporting, and dashboard development using Excel, SQL, Power BI, and Tableau. Experienced in transforming raw datasets into business intelligence insights through projects in Manufacturing, Stock Market, and Supply Chain & Inventory analytics, supporting data-driven business decision-making.
+
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-<h2 style="margin-bottom:40px;">Core Skills</h2>
-
+<h2>Core Skills</h2>
 <div class="skills-grid">
 
 <div class="card">
@@ -170,6 +182,7 @@ Focused on delivering data-driven insights to support strategic decisions.
 </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
 <h2>Professional Experience</h2>
 <div class="card">
@@ -184,24 +197,20 @@ Focused on delivering data-driven insights to support strategic decisions.
 </div>
 </section>
 
-  <section id="certifications">
-<h2 style="margin-bottom:30px;">Certifications & Training</h2>
-
+<!-- CERTIFICATION -->
+<section id="certifications">
+<h2>Certifications & Training</h2>
 <div class="card">
-
 <h3>Data Analyst Training Program – ExcelR (2025)</h3>
-
-<ul style="margin-top:15px; line-height:1.9;">
-<li>Completed hands-on training in Excel, SQL, Power BI, and Tableau.</li>
-<li>Worked on real-time industry projects including Manufacturing, Supply Chain, Stock Market & Sales Analytics.</li>
-<li>Built interactive dashboards and developed KPIs for business performance monitoring.</li>
-<li>Performed data cleaning, transformation, and reporting using structured SQL and Excel techniques.</li>
-<li>Applied data storytelling and visualization best practices for business decision-making.</li>
+<ul style="line-height:1.9;">
+<li>Hands-on training in Excel, SQL, Power BI and Tableau.</li>
+<li>Worked on Manufacturing, Supply Chain, Stock Market & Sales projects.</li>
+<li>Built dashboards and KPI reporting systems.</li>
 </ul>
-
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="project-grid">
@@ -233,77 +242,26 @@ Focused on delivering data-driven insights to support strategic decisions.
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-<h2 style="margin-bottom:30px;">Let's Connect</h2>
-
+<h2>Let's Connect</h2>
 <div class="card">
 
-<p style="margin-bottom:25px;">
-I am actively seeking opportunities as a Data Analyst, Business Analyst, MIS Executive or BI Developer. 
-If you are a recruiter or hiring manager, feel free to reach out.
+<p style="margin-bottom:20px;">
+Actively seeking opportunities as Data Analyst, Business Analyst or BI Developer.
 </p>
 
-<form action="https://formsubmit.co/mk9694477@gmail.com" method="POST">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Portfolio Contact Message">
-
-<div style="display:grid; gap:15px;">
-
-<input type="text" name="name" placeholder="Your Name" required
-style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;">
-
-<input type="email" name="email" placeholder="Your Email" required
-style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;">
-
-<textarea name="message" placeholder="Your Message" rows="5" required
-style="padding:12px;border-radius:8px;border:1px solid #e2e8f0;"></textarea>
-
-<button type="submit"
-style="padding:12px;border:none;border-radius:8px;background:#2563eb;color:white;font-weight:500;cursor:pointer;">
-Send Message
-</button>
-
-</div>
-</form>
-
-<div style="margin-top:30px; line-height:1.8;">
-
-<p><strong>Phone:</strong> 
-<a href="tel:+918978860832" style="color:#2563eb;">
-+91 8978860832
-</a>
-</p>
-
-<p><strong>Email:</strong> 
-<a href="mailto:mk9694477@gmail.com" style="color:#2563eb;">
-mk9694477@gmail.com
-</a>
-</p>
-
-<p><strong>LinkedIn:</strong> 
-<a href="https://www.linkedin.com/in/mubashir556/" target="_blank" style="color:#2563eb;">
-Connect on LinkedIn
-</a>
-</p>
-
-<p><strong>GitHub:</strong> 
-<a href="https://github.com/mubashir556" target="_blank" style="color:#2563eb;">
-View GitHub Projects
-</a>
-</p>
-
-</div>
+<p><strong>Phone:</strong> <a href="tel:+918978860832">+91 8978860832</a></p>
+<p><strong>Email:</strong> <a href="mailto:mk9694477@gmail.com">mk9694477@gmail.com</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubashir556/" target="_blank">linkedin.com/in/mubashir556</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/mubashir556" target="_blank">github.com/mubashir556</a></p>
 
 </div>
 </section>
+
 <footer>
 © 2026 Mohammad Mubashir Khan
 </footer>
 
 </body>
 </html>
-
-
-
-
